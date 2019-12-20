@@ -21,6 +21,7 @@ import NavHeaderEx from "./components/NavHeaderEx";
 import HeaderEx from "./components/HeaderEx";
 import ContentEx from "./components/ContentEx";
 import FooterEx from "./components/FooterEx";
+import Product from "./product/product";
 
 function App() {
   return (
@@ -44,7 +45,8 @@ function App() {
           </Header>
           <Content>
             <Switch>
-              <Route path="/" component={ContentEx}></Route>
+              <Route exact path="/" component={ContentEx}></Route>
+              <Route path="/products" component={Product}></Route>
             </Switch>
           </Content>
           <Sidebar>
